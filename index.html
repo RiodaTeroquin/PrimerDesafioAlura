@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
         <header> 
@@ -12,24 +15,27 @@
         </header>
     
     <main>
-        <div class="columna" id="IngresoTexto">
-            <p>Ingresa el texto aqui</p>
-            <textarea rows="50" cols="70" placeholder="Ingrese el texto"> </textarea>           
-            <p>&#9888; Solo letras minusculas y sin acento</p>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">&#9888; Solo letras minusculas y sin acento</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
 
-            <button>Encriptar</button>
-            <button>Desencriptar</button>
-
-        </div>
-            
-        <div class="columna" id="TextoDesencriptado">
-            <img src="assets/Muñeco.png" alt="Muñeco con lupa">
-            <textarea rows="50" cols="70" style="display: none;"> </textarea>
-            <!--<input type="text" style="display: none;">  -->
-            <p>Ningun mensaje fue encontrado</p>
-            <p>Ingresa el texto que quieres encriptar o desencriptar</p>   
-            <button>Copiar</button> 
-        </div>
+        <section>
+            <textarea class="mensaje" cols="20" rows="10" placeholder=""></textarea>
+            <div>
+                <h4 class="">Ningun mensaje fue encontrado</h4>
+                <h6 class="">Ingresa el texto que quieres encriptar o desencriptar</h6>
+            </div>
+            <div>
+                <button class="copiar">Copiar</button>
+            </div>
+        </section>      
     </main>
 
         <footer>
